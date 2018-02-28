@@ -1,22 +1,29 @@
 import React from "react";
-import { Navbar, NavItem } from 'react-materialize';
-
 
 function Nav(){
   return (
-    <div>
+    <div >
       <style jsx>{`
-            .wic-nav {
-              background-color: #2e3192;
-              padding: 0px 10px;
-            }
+        div {
+          display: flex;
+          align-content: right;
+        }
+        li {
+          list-style: none;
+          font-family: 'Roboto', sans-serif;
+          display: inline-block;
+          background-color: #6c54a3;
+          border: 1px solid black;
+          padding: 2px;
+          color: white;
+          margin: 2px;
+        }
+        }
         `}</style>
-    <Navbar className="wic-nav" brand='WIC Photo Library' right>
-    	<NavItem href='#'>Home</NavItem>
-    	<NavItem href='#'>Search for a photo</NavItem>
-      <NavItem href='#'>About the project</NavItem>
-      <NavItem href='#'>Contact</NavItem>
-    </Navbar>
+      <li href='#'>Home</li>
+      <li href='#'>Search for a photo</li>
+      <li href='#'>About the project</li>
+      <li href='#'>Contact</li>
     </div>
   );
 }

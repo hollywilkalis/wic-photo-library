@@ -7,7 +7,7 @@ function Home(){
       <style jsx>{`
 
         `}</style>
-
+      <p>Home works!</p>
     </div>
   );
 }

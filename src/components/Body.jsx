@@ -1,17 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Switch, Route } from 'react-router-dom';
 
 function Body(){
   return (
-    <div>
+    <div className="body">
       <style jsx>{`
-        div {
+        .body {
           background-color: #f3716d;
           height: 300px;
+          font-family: 'Roboto', sans-serif;
         }
         `}</style>
-
+      <Switch>
+        <p>Body works!</p>
+      </Switch>
     </div>
+
   );
 }
 
