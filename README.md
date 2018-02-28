@@ -2,7 +2,7 @@
 
 #### A custom photo library for the Oregon WIC Program
 
-#### By _**{List of contributors}**_
+#### By Holly Wilkalis
 
 ## Description
 
