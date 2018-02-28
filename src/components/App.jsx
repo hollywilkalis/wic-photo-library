@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from './Nav';
 import Body from './Body';
-import { Switch, Route } from 'react-router-dom';
 
 
 function App(){
