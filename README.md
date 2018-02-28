@@ -11,7 +11,7 @@ The customer has a new photo library that they would like to make available to t
 
 ## Support and contact details
 
-This project is a work in process. For more information, contact Holly Wilkalis at holly.wilkalis@gmail.com.
+This project is a work in process. For more information, contact Holly Wilkalis at holly.wilkalis@gmail.com. For a repository of my planning documents, please see https://github.com/hollywilkalis/capstone-planning.
 
 
 ### License
