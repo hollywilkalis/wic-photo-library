@@ -1,19 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Library from './Library';
+import Photo from './Photo';
 
 function Body(){
   return (
-    <div className="body">
-      <style jsx>{`
-        .body {
-          background-color: #f3716d;
-          height: 300px;
-          font-family: 'Roboto', sans-serif;
-        }
-        `}</style>
+    <div>
       <Switch>
-        <p>Body works!</p>
+        <Route exact path='/' component={Home} />
+        <Route path='/library' component={Library} />
+        <Route path='/photo' component={Photo} />
       </Switch>
     </div>
 

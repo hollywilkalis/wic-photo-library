@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Nav(){
   return (
@@ -7,6 +8,7 @@ function Nav(){
         div {
           display: flex;
           justify-content: flex-end;
+          margin-bottom: 20px;
         }
         li {
           list-style: none;
@@ -15,20 +17,22 @@ function Nav(){
           background-color: #6c54a3;
           border: 1px solid black;
           padding: 2px 5px;
-          color: white;
           margin: 2px 5px;
           cursor: pointer;
           box-shadow: 2px 2px #888888;
+          color: white;
+          border-radius: 3px;
           }
         li:hover {
           background-color: #f3716d;
+          color: black;
         }
         }
         `}</style>
-      <li href='#'>Home</li>
-      <li href='#'>Search for a photo</li>
-      <li href='#'>About the project</li>
-      <li href='#'>Contact</li>
+      <li><Link style={{color: 'white', textDecoration: 'none' }} to="/">Home</Link></li>
+      <li><Link style={{color: 'white', textDecoration: 'none' }} to="/library">Search for a photo</Link></li>
+      <li><Link style={{color: 'white', textDecoration: 'none' }} to="/">About the project</Link></li>
+      <li><Link style={{color: 'white', textDecoration: 'none' }} to="/">Contact</Link></li>
     </div>
   );
 }
