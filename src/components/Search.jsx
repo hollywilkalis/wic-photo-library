@@ -6,7 +6,7 @@ function Search(){
     <div className="search-container">
       <style jsx>{`
         .search-container {
-          width: 40%;
+          width: 30%;
           min-width: 200px;
           max-width: 300px;
         }

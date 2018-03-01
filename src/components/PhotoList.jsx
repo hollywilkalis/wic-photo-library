@@ -8,7 +8,7 @@ function PhotoList(props) {
     <div className="photo-list">
     <style jsx>{`
       .list-container {
-        width: 60%;
+        width: 70%;
         min-width: 300px;
         display: flex;
         flex-wrap: wrap;
