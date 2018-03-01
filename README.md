@@ -18,4 +18,4 @@ This project is a work in process. For more information, contact Holly Wilkalis 
 
 *MIT license*
 
-Copyright (c) 2013 **Holly Wilkalis**
+Copyright (c) 2018 **Holly Wilkalis**
