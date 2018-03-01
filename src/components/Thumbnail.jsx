@@ -15,7 +15,7 @@ function Thumbnail(){
         }
 
         `}</style>
-      <img className="thumbnail" src="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/BFMB_035_FB_cover.jpg?raw=true" />
+      <img className="thumbnail" src="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_PPT.jpg?raw=true" />
       <Download />
     </div>
   );

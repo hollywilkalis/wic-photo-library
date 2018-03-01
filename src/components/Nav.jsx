@@ -29,8 +29,9 @@ function Nav(){
         }
         }
         `}</style>
+
       <li><Link style={{color: 'white', textDecoration: 'none' }} to="/">Home</Link></li>
-      <li><Link style={{color: 'white', textDecoration: 'none' }} to="/library">Search for a photo</Link></li>
+      <li><Link style={{color: 'white', textDecoration: 'none' }} to="/photolist">Search for a photo</Link></li>
       <li><Link style={{color: 'white', textDecoration: 'none' }} to="/">About the project</Link></li>
       <li><Link style={{color: 'white', textDecoration: 'none' }} to="/">Contact</Link></li>
     </div>
