@@ -4,11 +4,14 @@ import Body from './Body';
 
 
 function App(){
-  <style jsx>{`
-
-    `}</style>
   return (
     <div>
+      <style jsx>{`
+        * {
+          box-sizing: border-box;
+          font-family: 'Open Sans', sans-serif;
+        }
+        `}</style>
       <Nav />
       <Body />
     </div>
