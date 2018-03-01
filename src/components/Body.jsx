@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import PhotoList from './PhotoList';
 import { v4 } from 'uuid';
+import About from './About';
 
 class Body extends React.Component {
 
@@ -70,6 +71,7 @@ class Body extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/photolist' render={(props)=><PhotoList photoList={this.state.masterPhotoList} />} />
+          <About />
         </Switch>
       </div>
       );
