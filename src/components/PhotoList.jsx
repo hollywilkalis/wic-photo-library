@@ -9,8 +9,6 @@ function PhotoList(props) {
     <div className="photo-list">
     <style jsx>{`
       .list-container {
-        width: 70%;
-        min-width: 300px;
         display: flex;
         flex-wrap: wrap;
       }
@@ -20,7 +18,7 @@ function PhotoList(props) {
 
       }
       `}</style>
-    <Search />
+    <Search photoList={props.masterPhotoList}/>
     <div className="list-container">
       {Object.keys(props.photoList).map(function(photoId) {
         var photo = props.photoList[photoId];

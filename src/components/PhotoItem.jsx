@@ -11,7 +11,7 @@ function PhotoItem(props){
       <style jsx>{`
         .photo-card {
           margin: 10px;
-          width: 40%;
+          width: 25%;
           min-width: 200px;
           }
         `}</style>
