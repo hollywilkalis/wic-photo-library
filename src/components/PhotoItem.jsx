@@ -29,6 +29,7 @@ PhotoItem.propTypes = {
   thumbnailURL: PropTypes.string,
   socialmediaURL: PropTypes.string,
   printURL: PropTypes.string,
+  powerPointURL: PropTypes.string,
   location: PropTypes.string,
   photoDate: PropTypes.string,
   photographer: PropTypes.string,

@@ -32,6 +32,7 @@ function PhotoList(props) {
           orientation={photo.orientation}
           thumbnailURL={photo.thumbnailURL}
           socialmediaURL={photo.socialmediaURL}
+          powerPointURL={photo.powerPointURL}
           printURL={photo.printURL}
           location={photo.location}
           photoDate={photo.photoDate}
