@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoItem from './PhotoItem';
 import Search from './Search';
+import DetailView from './DetailView';
 
 function PhotoList(props) {
   return (
@@ -42,6 +43,7 @@ function PhotoList(props) {
       })}
       </div>
     </div>
+
   );
 }
 

@@ -39,19 +39,4 @@ function Details(){
   );
 }
 
-Details.propTypes = {}
-  imgTitle: PropTypes.string,
-  longDesc: PropTypes.string,
-  contentCategory: PropTypes.string,
-  contentKeywords: PropTypes.string,
-  orientation: PropTypes.string,
-  thumbnailURL: PropTypes.string,
-  socialmediaURL: PropTypes.string,
-  printURL: PropTypes.string,
-  location: PropTypes.string,
-  photoDate: PropTypes.string,
-  photographer: PropTypes.string,
-  useRestrictions: PropTypes.string,
-  currentRouterPath: PropTypes.string />
-
 export default Details;
