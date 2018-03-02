@@ -7,7 +7,7 @@ function PhotoItem(props){
       <img style={{width: '100%', border: '2px solid darkgray'}} src={props.thumbnailURL}/>
     </div>
   return (
-    <div className="photo-card">
+    <div className="photo-card" onClick={() => {props.onPhotoSelection(props.photoId);}} >
       <style jsx>{`
         .photo-card {
           margin: 10px;
@@ -33,7 +33,9 @@ PhotoItem.propTypes = {
   photoDate: PropTypes.string,
   photographer: PropTypes.string,
   useRestrictions: PropTypes.string,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  photoId: PropTypes.string.isRequired,
+  onPhotoSelection: PropTypes.func
 };
 
 export default PhotoItem;

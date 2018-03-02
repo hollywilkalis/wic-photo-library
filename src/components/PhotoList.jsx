@@ -37,7 +37,8 @@ function PhotoList(props) {
           photographer={photo.photographer}
           useRestrictions={photo.useRestrictions}
           key={photoId}
-          photoId={photoId}/>
+          photoId={photoId}
+          onPhotoSelection={props.onPhotoSelection}/>
       })}
       </div>
     </div>
@@ -45,7 +46,9 @@ function PhotoList(props) {
 }
 
 PhotoList.propTypes = {
-  photoList: PropTypes.object
+  photoList: PropTypes.object,
+  onPhotoSelection: PropTypes.func.isRequired,
+  selectedPhoto: PropTypes.string
 };
 
 export default PhotoList;

@@ -60,9 +60,16 @@ class Body extends React.Component {
           photoDate: '09/2018',
           photographer: '',
           useRestrictions: 'for Oregon WIC and WIC clinic use only',
-          },
-        }
-      }
+          }
+        },
+        selectedPhoto: null
+        };
+        this.handleSelectingPhoto = this.handleSelectingPhoto.bind(this);
+
+    }
+    handleSelectingPhoto(photoId) {
+      this.setState({selectedPhoto: photoId});
+      alert('selected this photo:' + photoId);
     }
 
   render(){
@@ -70,7 +77,8 @@ class Body extends React.Component {
       <div>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/photolist' render={(props)=><PhotoList photoList={this.state.masterPhotoList} />} />
+          <Route path='/photolist' render={(props)=><PhotoList photoList={this.state.masterPhotoList} selectedPhoto={this.state.selectedPhoto}
+          onPhotoSelection={this.handleSelectingPhoto}/>} />
           <About />
         </Switch>
       </div>
