@@ -1,15 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import Home from './Home';
 import PhotoList from './PhotoList';
 import { v4 } from 'uuid';
 import About from './About';
+import { connect } from 'react-redux';
 
 class Body extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log(props);
     this.state = {
       masterPhotoList: {
         1: {
@@ -76,14 +78,25 @@ class Body extends React.Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/photolist' render={(props)=><PhotoList photoList={this.state.masterPhotoList} selectedPhoto={this.state.selectedPhoto}
-          onPhotoSelection={this.handleSelectingPhoto}/>} />
-          <About />
+          <Route exact path='/' component={Home} /> />
+          <Route path='/about' component={About} /> />
+          <Route path='/photolist' render={()=><PhotoList onSelectingPhoto={this.handleSelectingPhoto}
+          photoList={this.state.masterPhotoList} />} />
         </Switch>
       </div>
       );
   }
 }
 
-export default Body;
+
+Body.propTypes = {
+  photoList: PropTypes.object
+};
+
+const mapStateToProps = state => {
+  return {
+    photoList: state.photoList
+  };
+};
+
+export default withRouter(connect(mapStateToProps)(Body));

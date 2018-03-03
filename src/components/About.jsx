@@ -6,12 +6,12 @@ function About(){
     <div>
       <style jsx>{`
         img {
-          width: 50%;
-          float: left;
+          width: 40%;
+          float: right;
           margin: 0 20px;
           border: 7px solid #2e3192;
           padding: 4px;
-          border-radius: 20%;
+          border-radius: 10%;
         }
         h2 {
           color: #2e3192;

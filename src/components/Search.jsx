@@ -23,7 +23,7 @@ function Search(){
       <style jsx>{`
         .search-container {
           border: 1px solid gray;
-          padding: 10px;
+          padding: 5px;
           width: 100%;
         }
 

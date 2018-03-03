@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from 'react-redux';
 
 function PhotoItem(props){
   const photoInformation =
@@ -35,8 +36,7 @@ PhotoItem.propTypes = {
   photographer: PropTypes.string,
   useRestrictions: PropTypes.string,
   currentRouterPath: PropTypes.string,
-  photoId: PropTypes.string.isRequired,
-  onPhotoSelection: PropTypes.func
+  photoId: PropTypes.string.isRequired
 };
 
-export default PhotoItem;
+export default connect()(PhotoItem);

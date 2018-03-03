@@ -15,7 +15,7 @@ function Footer(){
         }
         `}</style>
         <div>Something to go here about the who can use the library, maybe?</div>
-        <div>Contact information will go here, eventually</div>
+        <div>Barb McClendon</div>
     </div>
   );
 }

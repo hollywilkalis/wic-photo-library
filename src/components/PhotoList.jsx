@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoItem from './PhotoItem';
 import Search from './Search';
-import DetailView from './DetailView';
 
 function PhotoList(props) {
   return (
@@ -18,7 +17,7 @@ function PhotoList(props) {
 
       }
       `}</style>
-    <Search photoList={props.masterPhotoList}/>
+
     <div className="list-container">
       {Object.keys(props.photoList).map(function(photoId) {
         var photo = props.photoList[photoId];
@@ -36,6 +35,7 @@ function PhotoList(props) {
           photoDate={photo.photoDate}
           photographer={photo.photographer}
           useRestrictions={photo.useRestrictions}
+          currentRouterPath={props.currentRouterPath}
           key={photoId}
           photoId={photoId}
           onPhotoSelection={props.onPhotoSelection}/>
@@ -49,7 +49,8 @@ function PhotoList(props) {
 PhotoList.propTypes = {
   photoList: PropTypes.object,
   onPhotoSelection: PropTypes.func.isRequired,
-  selectedPhoto: PropTypes.string
+  selectedPhoto: PropTypes.string,
+  currentRouterPath: PropTypes.string
 };
 
 export default PhotoList;

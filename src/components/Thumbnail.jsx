@@ -6,6 +6,9 @@ function Thumbnail(){
   return (
     <div className="thumbnail-container">
       <style jsx>{`
+        .thumbnail-container {
+          width: 25%;
+        }
         .thumbnail {
           width: 90%;
           border: 2px solid darkgray;
