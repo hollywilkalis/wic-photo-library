@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from 'react-router-dom';
 
 function Footer(){
   return (
@@ -20,17 +21,18 @@ function Footer(){
         }
         `}</style>
 
-        <div>
-          <h4>Oregon WIC Photo Library</h4>
-          <p>This library is a project of the Oregon WIC Program.</p>
-        </div>
-        <div>
-          <p>Oregon WIC Program<br/>
-          800 NE Oregon St Suite 865<br/>
-          Portland, OR 97232<br/>
-          Phone<br/>
-          Email</p>
-        </div>
+      <div>
+        <h4>Oregon WIC Photo Library</h4>
+        <p>This library is a project of the Oregon WIC Program.</p>
+        
+      </div>
+      <div>
+        <p>Oregon WIC Program<br/>
+        800 NE Oregon St Suite 865<br/>
+        Portland, OR 97232<br/>
+        Phone<br/>
+        Email</p>
+      </div>
     </div>
   );
 }

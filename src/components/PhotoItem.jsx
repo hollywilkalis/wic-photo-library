@@ -2,19 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import { Image, Col } from 'react-bootstrap';
+import c from './../constants';
 
 function PhotoItem(props){
+
+  function handleSelectingPhoto(photoId) {
+    const { dispatch } = props;
+    const action = {
+      type: c.SELECT_PHOTO,
+      photoId: photoId
+    };
+    dispatch(action);
+  }
   const photoInformation =
     <div>
       <Col xs={6} md={4}>
         <Image src={props.thumbnailURL} thumbnail/>
       </Col>
-    </div>
+    </div>;
   return (
-    <div className="photo-card">
-      <style jsx>{`
-
-        `}</style>
+    <div onClick={() => {handleSelectingPhoto(props.photoId);}}>
       {photoInformation}
     </div>
   );
@@ -35,7 +42,7 @@ PhotoItem.propTypes = {
   photographer: PropTypes.string,
   useRestrictions: PropTypes.string,
   currentRouterPath: PropTypes.string,
-  photoId: PropTypes.string.isRequired
+  photoId: PropTypes.string.isRequired,
 };
 
 export default connect()(PhotoItem);

@@ -7,12 +7,13 @@ function SiteNav(){
     <div>
       <Navbar>
         <Navbar.Header>
-            <img style={{width: '100px'}} pullLeft src='https://github.com/hollywilkalis/capstone-planning/blob/master/samples/wic-logo-green.png?raw=true' />
+          <img style={{width: '100px'}} pullLeft src='https://github.com/hollywilkalis/capstone-planning/blob/master/samples/wic-logo-green.png?raw=true' />
         </Navbar.Header>
         <Nav pullRight style={{marginTop: '20px'}}>
           <NavItem><Link to ="/">Home</Link></NavItem>
           <NavItem><Link to="/photolist">Search for a photo</Link></NavItem>
           <NavItem><Link to="/about">About the project</Link></NavItem>
+          <NavItem><Link to="/photoinput">Admin</Link></NavItem>
         </Nav>
       </Navbar>
     </div>

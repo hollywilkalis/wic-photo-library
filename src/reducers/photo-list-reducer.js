@@ -1,12 +1,18 @@
+import c from './../constants';
+
 export default (state = {}, action) => {
+  let newState;
+
+  const { imgTitle, longDesc, contentCategory, contentKeywords, orientation, thumbnailURL, socialmediaURL, printURL, powerPointURL, location, photoDate, photographer, useRestrictions, id } = action;
+
   switch (action.type) {
-  case 'ADD_PHOTO':
-    const { imgTitle, longDesc, contentCategory, contentKeywords, orientation, thumbnailURL, socialmediaURL, printURL, powerPointURL, location, photoDate, photographer, useRestrictions, id } = action;
-    let newState = Object.assign({}, state, {
+
+  case c.ADD_PHOTO:
+    newState = Object.assign({}, state, {
       [id]: {
         imgTitle: imgTitle,
         longDesc: longDesc,
-        contentCategory: content,
+        contentCategory: contentCategory,
         contentKeywords:
           contentKeywords,
         orientation: orientation,
@@ -21,6 +27,7 @@ export default (state = {}, action) => {
       }
     });
     return newState;
+
   default:
     return state;
   }

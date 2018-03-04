@@ -10,35 +10,33 @@ function PhotoList(props) {
       <style jsx>{`
 
         `}</style>
-    <Search/>
-    <Grid>
-    <Row>
-    <div className="list-container">
-      {Object.keys(props.photoList).map(function(photoId) {
-        var photo = props.photoList[photoId];
-        return <PhotoItem
-          imgTitle={photo.imgTitle}
-          longDesc={photo.longDesc}
-          contentCategory={photo.contentCategory}
-          contentKeywords={photo.contentKeywords}
-          orientation={photo.orientation}
-          thumbnailURL={photo.thumbnailURL}
-          socialmediaURL={photo.socialmediaURL}
-          powerPointURL={photo.powerPointURL}
-          printURL={photo.printURL}
-          location={photo.location}
-          photoDate={photo.photoDate}
-          photographer={photo.photographer}
-          useRestrictions={photo.useRestrictions}
-          currentRouterPath={props.currentRouterPath}
-          key={photoId}
-          photoId={photoId}
-          onPhotoSelection={props.onPhotoSelection}
-          selectedPhoto={props.selectedPhoto}/>
-      })}
-      </div>
-    </Row>
-    </Grid>
+      <Search/>
+      <Grid>
+        <Row>
+          <div className="list-container">
+            {Object.keys(props.photoList).map(function(photoId) {
+              var photo = props.photoList[photoId];
+              return <PhotoItem
+                imgTitle={photo.imgTitle}
+                longDesc={photo.longDesc}
+                contentCategory={photo.contentCategory}
+                contentKeywords={photo.contentKeywords}
+                orientation={photo.orientation}
+                thumbnailURL={photo.thumbnailURL}
+                socialmediaURL={photo.socialmediaURL}
+                powerPointURL={photo.powerPointURL}
+                printURL={photo.printURL}
+                location={photo.location}
+                photoDate={photo.photoDate}
+                photographer={photo.photographer}
+                useRestrictions={photo.useRestrictions}
+                currentRouterPath={props.currentRouterPath}
+                key={photoId}
+                photoId={photoId} />;
+            })}
+          </div>
+        </Row>
+      </Grid>
     </div>
 
   );
@@ -46,8 +44,6 @@ function PhotoList(props) {
 
 PhotoList.propTypes = {
   photoList: PropTypes.object,
-  onPhotoSelection: PropTypes.func,
-  selectedPhoto: PropTypes.string,
   currentRouterPath: PropTypes.string
 };
 
