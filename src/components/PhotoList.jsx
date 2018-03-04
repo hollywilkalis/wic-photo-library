@@ -8,8 +8,9 @@ function PhotoList(props) {
   return (
     <div className="photo-list">
       <style jsx>{`
-        
+
         `}</style>
+    <Search/>
     <Grid>
     <Row>
     <div className="list-container">

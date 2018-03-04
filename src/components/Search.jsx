@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Form, Select } from 'react-form';
+import { Well, Button } from 'react-bootstrap';
 
 function Search(){
 
@@ -19,26 +20,22 @@ function Search(){
   },
 ]
   return (
-    <div className="search-container">
-      <style jsx>{`
-        .search-container {
-          border: 1px solid gray;
-          padding: 5px;
-          width: 100%;
-        }
+    <div>
+      <Well>
+        <h4>Filter images by category</h4>
 
-        `}</style>
-        <h3>Filter images by category</h3>
+
         <Form>
           {formApi => (
             <form id="select-input-form">
               <Select field="status" id="select-input-status" options={statusOptions} />
-              <button type="submit">
+              <Button bsStyle="primary" type="submit">
                 Submit
-              </button>
+              </Button>
             </form>
           )}
         </Form>
+      </Well>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from './Nav';
+import SiteNav from './SiteNav';
 import Body from './Body';
 
 
@@ -12,7 +12,7 @@ function App(){
           font-family: 'Open Sans', sans-serif;
         }
         `}</style>
-      <Nav />
+      <SiteNav />
       <Body />
     </div>
   );
