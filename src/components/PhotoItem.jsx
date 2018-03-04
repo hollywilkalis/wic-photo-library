@@ -1,20 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
+import { Image, Col } from 'react-bootstrap';
 
 function PhotoItem(props){
   const photoInformation =
     <div>
-      <img style={{width: '100%', border: '2px solid darkgray'}} src={props.thumbnailURL}/>
+      <Col xs={6} md={4}>
+        <Image src={props.thumbnailURL} thumbnail/>
+      </Col>
     </div>
   return (
     <div className="photo-card">
       <style jsx>{`
-        .photo-card {
-          margin: 10px;
-          width: 25%;
-          min-width: 200px;
-          }
+
         `}</style>
       {photoInformation}
     </div>

@@ -2,22 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoItem from './PhotoItem';
 import Search from './Search';
+import { Grid, Row } from 'react-bootstrap';
 
 function PhotoList(props) {
   return (
     <div className="photo-list">
-    <style jsx>{`
-      .list-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .photo-list {
-        display: flex;
-        flex-wrap: wrap;
-
-      }
-      `}</style>
-
+      <style jsx>{`
+        
+        `}</style>
+    <Grid>
+    <Row>
     <div className="list-container">
       {Object.keys(props.photoList).map(function(photoId) {
         var photo = props.photoList[photoId];
@@ -42,6 +36,8 @@ function PhotoList(props) {
           selectedPhoto={props.selectedPhoto}/>
       })}
       </div>
+    </Row>
+    </Grid>
     </div>
 
   );

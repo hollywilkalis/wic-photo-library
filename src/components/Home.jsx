@@ -17,6 +17,7 @@ function Home(){
         h3 {
           color: cream;
           font-weight: bold;
+          font-size: 35px;
         }
 
         p {
