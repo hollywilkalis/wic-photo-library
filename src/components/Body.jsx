@@ -6,8 +6,17 @@ import PhotoList from './PhotoList';
 import PhotoInput from './PhotoInput';
 import About from './About';
 import { connect } from 'react-redux';
+import constants from './../constants';
+const { c } = constants;
+import * as actions from './../actions';
 
 class Body extends React.Component {
+
+  componentWillMount() {
+    const { dispatch } = this.props;
+    const { watchFirebasePhotosRef } = actions;
+    dispatch(watchFirebasePhotosRef());
+  }
 
   render(){
     return (
@@ -16,7 +25,7 @@ class Body extends React.Component {
           <Route exact path='/' component={Home} /> />
           <Route path='/about' component={About} /> />
           <Route path='/photoinput' render={(props)=><PhotoInput currentRouterPath={props.location.pathname} />} />
-          <Route path='/photolist' render={(props)=><PhotoList photoList={this.props.masterPhotoList}/>} />
+          <Route path='/photolist' render={()=><PhotoList photoList={this.props.masterPhotoList}/>} />
         </Switch>
       </div>
     );

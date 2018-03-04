@@ -1,4 +1,6 @@
 import photoListReducer from './../../src/reducers/photo-list-reducer';
+import constants from './../../src/constants';
+const { c } = constants;
 
 describe('photoListReducer', () => {
 

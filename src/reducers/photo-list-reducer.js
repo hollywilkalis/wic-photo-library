@@ -1,4 +1,5 @@
-import c from './../constants';
+import constants from './../../src/constants';
+const { c } = constants;
 
 export default (state = {}, action) => {
   let newState;
@@ -24,8 +25,14 @@ export default (state = {}, action) => {
         photoDate: photoDate,
         photographer: photographer,
         useRestrictions: useRestrictions,
+        id: id
       }
     });
+    return newState;
+
+  case c.RECEIVE_PHOTO:
+    newState = Object.assign({}, state);
+    newState[action.photo.id] = action.photo;
     return newState;
 
   default:

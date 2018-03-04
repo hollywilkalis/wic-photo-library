@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 import { Button } from 'react-bootstrap';
-import c from './../constants';
+import constants from './../../src/constants';
+const { c } = constants;
+import { addPhoto } from './../actions';
 
 function NewPhotoForm(props){
   let _imgTitle = null;
@@ -22,24 +24,8 @@ function NewPhotoForm(props){
   function handleNewPhotoFormSubmission(event) {
     const { dispatch } = props;
     event.preventDefault();
-    const action = {
-      type: c.ADD_PHOTO,
-      id: v4(),
-      imgTitle: _imgTitle.value,
-      longDesc: _longDesc.value,
-      contentCategory: _contentCategory.value,
-      contentKeywords: _contentKeywords.value,
-      orientation: _orientation.value,
-      thumbnailURL: _thumbnailURL.value,
-      socialmediaURL: _socialmediaURL.value,
-      powerPointURL: _powerPointURL.value,
-      printURL: _printURL.value,
-      location: _location.value,
-      photoDate: _photoDate.value,
-      photographer: _photographer.value,
-      useRestrictions: _useRestrictions.value
-    };
-    dispatch(action);
+    dispatch(addPhoto(_imgTitle.value, _longDesc.value, _contentCategory.value, _contentKeywords.value, _orientation.value, _thumbnailURL.value, _socialmediaURL.value, _powerPointURL.value, _printURL.value, _location.value, _photoDate.value, _photographer.value, _useRestrictions.value));
+
     _imgTitle.value = '';
     _longDesc.value = '';
     _contentCategory.value = '';

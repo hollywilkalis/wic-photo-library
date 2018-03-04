@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import PhotoItem from './PhotoItem';
 import Search from './Search';
 import { Grid, Row } from 'react-bootstrap';
+import constants from './../../src/constants';
+const { c } = constants;
 
 function PhotoList(props) {
   return (
