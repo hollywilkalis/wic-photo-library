@@ -8,6 +8,7 @@ import photoListReducer from './reducers/photo-list-reducer';
 import { Provider } from 'react-redux';
 
 
+
 const store = createStore(photoListReducer);
 
 let unsubscribe = store.subscribe(() =>

@@ -66,10 +66,10 @@ class Body extends React.Component {
         },
         selectedPhoto: null
         };
-        this.handleSelectingPhoto = this.handleSelectingPhoto.bind(this);
+        this.handlePhotoSelection = this.handlePhotoSelection.bind(this);
 
     }
-    handleSelectingPhoto(photoId) {
+    handlePhotoSelection(photoId) {
       this.setState({selectedPhoto: photoId});
       alert('selected this photo:' + photoId);
     }
@@ -80,7 +80,7 @@ class Body extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} /> />
           <Route path='/about' component={About} /> />
-          <Route path='/photolist' render={()=><PhotoList onSelectingPhoto={this.handleSelectingPhoto}
+          <Route path='/photolist' render={()=><PhotoList onPhotoSelection={this.handleSelectingPhoto}
           photoList={this.state.masterPhotoList} />} />
         </Switch>
       </div>

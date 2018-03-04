@@ -38,7 +38,8 @@ function PhotoList(props) {
           currentRouterPath={props.currentRouterPath}
           key={photoId}
           photoId={photoId}
-          onPhotoSelection={props.onPhotoSelection}/>
+          onPhotoSelection={props.onPhotoSelection}
+          selectedPhoto={props.selectedPhoto}/>
       })}
       </div>
     </div>
@@ -48,7 +49,7 @@ function PhotoList(props) {
 
 PhotoList.propTypes = {
   photoList: PropTypes.object,
-  onPhotoSelection: PropTypes.func.isRequired,
+  onPhotoSelection: PropTypes.func,
   selectedPhoto: PropTypes.string,
   currentRouterPath: PropTypes.string
 };

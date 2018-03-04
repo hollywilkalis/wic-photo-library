@@ -8,7 +8,7 @@ function PhotoItem(props){
       <img style={{width: '100%', border: '2px solid darkgray'}} src={props.thumbnailURL}/>
     </div>
   return (
-    <div className="photo-card" onClick={() => {props.onPhotoSelection(props.photoId);}} >
+    <div className="photo-card">
       <style jsx>{`
         .photo-card {
           margin: 10px;

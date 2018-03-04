@@ -12,6 +12,7 @@ function Footer(){
           justify-content: space-between;
           margin-top: 40px;
           padding: 10px;
+          width: 100%;
         }
         `}</style>
         <div>Something to go here about the who can use the library, maybe?</div>

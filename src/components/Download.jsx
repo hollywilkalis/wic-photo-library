@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Button } from 'reactstrap';
+
 
 function Download(){
   return (
@@ -24,9 +26,9 @@ function Download(){
         }
         `}</style>
       <h3>Download this image</h3>
-      <p className="download-button"><a href="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_FB_cover.jpg" style={{color: 'white', textDecoration: 'none' }} download>Facebook</a></p>
-      <p className="download-button"><a href="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_print.jpg" style={{color: 'white', textDecoration: 'none' }} download>Print</a></p>
-      <p className="download-button"><a href="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_PPT.jpg" style={{color: 'white', textDecoration: 'none' }} download>Powerpoint</a></p>
+      <Button><a href="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_FB_cover.jpg" style={{color: 'white', textDecoration: 'none' }} download>Facebook</a></Button>
+      <Button><a href="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_print.jpg" style={{color: 'white', textDecoration: 'none' }} download>Print</a></Button>
+      <Button><a href="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/CLN_014_PPT.jpg" style={{color: 'white', textDecoration: 'none' }} download>Powerpoint</a></Button>
     </div>
   );
 }
