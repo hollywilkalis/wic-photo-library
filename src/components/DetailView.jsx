@@ -8,10 +8,10 @@ function DetailView(props){
 
   return (
     <div >
-        Detail View Works!
-        <Thumbnail/>
-        <Details/>
-        <Download />
+      Detail View Works!
+      <Thumbnail/>
+      <Details/>
+      <Download />
 
     </div>
   );

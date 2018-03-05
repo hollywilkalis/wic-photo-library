@@ -17,12 +17,13 @@ function PhotoItem(props){
   }
   const photoInformation =
     <div>
-      <Col xs={6} md={4}>
+      <Col xs={6} s={4} md={3}>
         <Image src={props.thumbnailURL} thumbnail/>
+        <p>{props.imgTitle}</p>
       </Col>
     </div>;
   return (
-    <div onClick={() => {handleSelectingPhoto(props.photoId);}}>
+    <div> onClick={() => {handleSelectingPhoto(props.photoId);}}>
       {photoInformation}
     </div>
   );

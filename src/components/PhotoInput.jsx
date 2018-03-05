@@ -51,14 +51,11 @@ function NewPhotoForm(props){
           flex-wrap: wrap;
           padding: 20px;
           }
-          input {
+          input, select, textarea {
             width: 50%;
             margin-bottom: 10px;
           }
-          textarea {
-            width: 50%;
-            margin-bottom: 10px;
-          }
+
         `}</style>
       <form onSubmit={handleNewPhotoFormSubmission}>
         <div>
@@ -76,10 +73,15 @@ function NewPhotoForm(props){
             ref={(textarea) => {_longDesc = textarea;}}/>
         </div>
         <div>
-          <input
+          <select
+            multiple={true}
             id='contentCategory'
             placeholder='Content category'
-            ref={(input) => {_contentCategory = input;}}/>
+            ref={(select) => {_contentCategory = select;}}>
+            <option value="family">Family</option>
+            <option value="clinic">Clinic</option>
+            <option value="breastfeeding">Breastfeeding</option>
+          </select>
         </div>
         <div>
           <textarea
