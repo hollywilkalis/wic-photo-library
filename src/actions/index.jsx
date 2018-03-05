@@ -35,6 +35,7 @@ export function watchFirebasePhotosRef() {
   };
 }
 
+
 function receivePhoto(photoFromFirebase) {
   return {
     type: c.RECEIVE_PHOTO,

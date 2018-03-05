@@ -11,7 +11,7 @@ function SiteNav(){
         </Navbar.Header>
         <Nav pullRight style={{marginTop: '20px'}}>
           <NavItem><Link to ="/">Home</Link></NavItem>
-          <NavItem><Link to="/photolist">Search for a photo</Link></NavItem>
+          <NavItem><Link to="/photos">Search for a photo</Link></NavItem>
           <NavItem><Link to="/about">About the project</Link></NavItem>
           <NavItem><Link to="/photoinput">Admin</Link></NavItem>
         </Nav>

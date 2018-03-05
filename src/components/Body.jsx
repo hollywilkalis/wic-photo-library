@@ -4,6 +4,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Home from './Home';
 import PhotoList from './PhotoList';
 import PhotoInput from './PhotoInput';
+import DetailView from './DetailView';
 import About from './About';
 import { connect } from 'react-redux';
 import constants from './../constants';
@@ -25,7 +26,10 @@ class Body extends React.Component {
           <Route exact path='/' component={Home} /> />
           <Route path='/about' component={About} /> />
           <Route path='/photoinput' render={(props)=><PhotoInput currentRouterPath={props.location.pathname} />} />
-          <Route path='/photolist' render={()=><PhotoList photoList={this.props.masterPhotoList}/>} />
+          <Route exact path='/photos' render={()=>
+            <PhotoList photoList={this.props.masterPhotoList} selectedPhoto={this.props.selectedPhoto}/>} />
+          <Route exact path='/photos/:photoId' render={()=>
+            <PhotoList photoList={this.props.masterPhotoList} selectedPhoto={this.props.selectedPhoto}/>} />
         </Switch>
       </div>
     );
@@ -34,11 +38,13 @@ class Body extends React.Component {
 
 
 Body.propTypes = {
-  masterPhotoList: PropTypes.object
+  masterPhotoList: PropTypes.object,
+  selectedPhoto: PropTypes.string
 };
 
 const mapStateToProps = state => {
   return {
+    selectedPhoto: state.selectedPhoto,
     masterPhotoList: state.masterPhotoList
   };
 };

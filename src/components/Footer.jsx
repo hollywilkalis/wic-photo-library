@@ -19,19 +19,24 @@ function Footer(){
         h4 {
           font-weight: bold;
         }
+        a {
+          color: ivory;
+          font-weight: bold;
+        }
         `}</style>
 
       <div>
         <h4>Oregon WIC Photo Library</h4>
-        <p>This library is a project of the Oregon WIC Program.</p>
-        
+        <p>This photo library is a project of the Oregon WIC Program.</p>
+        <p>Site design and development by <a href="mailto:holly.wilkalis@gmail.com">Holly Wilkalis</a></p>
+
       </div>
       <div>
         <p>Oregon WIC Program<br/>
         800 NE Oregon St Suite 865<br/>
         Portland, OR 97232<br/>
-        Phone<br/>
-        Email</p>
+        971-673-0040<br/>
+        <i class="material-icons">mail</i><a href="mailto:barbara.a.mcclendon@state.or.us">Email us</a></p>
       </div>
     </div>
   );

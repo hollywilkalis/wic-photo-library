@@ -7,7 +7,7 @@ const { c } = constants;
 
 function PhotoItem(props){
 
-  function handleSelectingPhoto(photoId) {
+  function handleSelectingPhoto(photoId){
     const { dispatch } = props;
     const action = {
       type: c.SELECT_PHOTO,
@@ -15,6 +15,7 @@ function PhotoItem(props){
     };
     dispatch(action);
   }
+
   const photoInformation =
     <div>
       <Col xs={6} s={4} md={3}>
@@ -23,7 +24,7 @@ function PhotoItem(props){
       </Col>
     </div>;
   return (
-    <div> onClick={() => {handleSelectingPhoto(props.photoId);}}>
+    <div onClick={() => {handleSelectingPhoto(props.photoId);}}>
       {photoInformation}
     </div>
   );
