@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 function PhotoList(props) {
   let selectedPhotoContent = null;
   if (props.selectedPhoto.length > 0) {
-    selectedPhotoContent = <DetailView selectedPhoto={props.photoList[props.selectedPhoto]}/>;
+    return <DetailView selectedPhoto={props.photoList[props.selectedPhoto]}/>;
   }
 
   return (
@@ -48,7 +48,7 @@ function PhotoList(props) {
           })}
         </Row>
       </Grid>
-      {selectedPhotoContent}
+      
     </div>
   );
 }
