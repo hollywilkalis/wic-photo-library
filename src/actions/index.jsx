@@ -7,6 +7,7 @@ firebase.initializeApp(firebaseConfig);
 const photos = firebase.database().ref('photos');
 
 export function addPhoto(_imgTitle, _longDesc, _contentCategory, _contentKeywords, _orientation, _thumbnailURL, _socialmediaURL, _powerPointURL, _printURL, _location, _photoDate, _photographer, _useRestrictions) {
+  alert('Photo has been added');
   return () => photos.push({
     imgTitle: _imgTitle,
     longDesc: _longDesc,

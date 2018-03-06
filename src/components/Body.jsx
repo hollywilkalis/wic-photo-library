@@ -28,8 +28,8 @@ class Body extends React.Component {
           <Route path='/photoinput' render={(props)=><PhotoInput currentRouterPath={props.location.pathname} />} />
           <Route exact path='/photos' render={()=>
             <PhotoList photoList={this.props.masterPhotoList} selectedPhoto={this.props.selectedPhoto}/>} />
-          <Route exact path='/photos/:photoId' render={()=>
-            <PhotoList photoList={this.props.masterPhotoList} selectedPhoto={this.props.selectedPhoto}/>} />
+          <Route exact path='/detailview' render={()=>
+            <DetailView photoList={this.props.masterPhotoList} selectedPhoto={this.props.selectedPhoto}/>} />
         </Switch>
       </div>
     );

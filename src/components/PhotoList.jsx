@@ -5,8 +5,15 @@ import Search from './Search';
 import { Grid, Row, Col } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
+import DetailView from './DetailView';
+import { connect } from 'react-redux';
 
 function PhotoList(props) {
+  let selectedPhotoContent = null;
+  if (props.selectedPhoto.length > 0) {
+    selectedPhotoContent = <DetailView selectedPhoto={props.photoList[props.selectedPhoto]}/>;
+  }
+
   return (
     <div className="photo-list">
       <style jsx>{`
@@ -16,6 +23,7 @@ function PhotoList(props) {
         }
         `}</style>
       <Search/>
+
       <Grid>
         <Row>
           {Object.keys(props.photoList).map(function(photoId) {
@@ -36,18 +44,26 @@ function PhotoList(props) {
               useRestrictions={photo.useRestrictions}
               currentRouterPath={props.currentRouterPath}
               key={photoId}
-              photoId={photoId} />;
+              photoId={photoId}/>;
           })}
         </Row>
       </Grid>
+      {selectedPhotoContent}
     </div>
-
   );
 }
 
 PhotoList.propTypes = {
   photoList: PropTypes.object,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  selectedPhoto: PropTypes.string
 };
 
-export default PhotoList;
+const mapStateToProps = state => {
+  return {
+    selectedPhoto: state.selectedPhoto,
+    photoList: state.masterPhotoList
+  };
+};
+
+export default connect(mapStateToProps)(PhotoList);
