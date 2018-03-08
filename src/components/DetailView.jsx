@@ -35,6 +35,7 @@ function DetailView(props){
           padding: 10px;
           margin: 10px;
           box-shadow: 0 8px 6px -6px black;
+          backgroundColor: ivory;
         }
 
         .thumbnail-container {
