@@ -22,13 +22,13 @@ function Search(){
   return (
     <div>
     <style jsx>{`
-      div {
+      .padding {
         padding: 10px;
       }
 
       `}</style>
       <Panel>
-        <div className="search-container">
+        <div className="padding">
         <h4>Filter images by category</h4>
           <Form>
             {formApi => (

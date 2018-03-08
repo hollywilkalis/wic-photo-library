@@ -2,7 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Modal, Button } from 'react-bootstrap';
 
+
 function DetailView(props){
+
+  function unSelectPhoto(selectedPhoto) {
+
+    console.log(selectedPhoto);
+  }
+
   return (
     <div className="details-container">
       <style jsx>{`
@@ -28,27 +35,27 @@ function DetailView(props){
           padding: 10px;
           margin: 10px;
           box-shadow: 0 8px 6px -6px black;
-          align-items: center;
         }
 
         .thumbnail-container {
           width: 40%;
         }
 
-        .description-container {
-          width: 55%;
-        }
-
         .download-button {
           margin: 10px;
         }
+        .thumbnail {
+          width: 100%;
+        }
 
+        .button-container {
+          display: flex;
+          justify-content: space-around;
+        }
 
       `}</style>
-      <div className="thumbnail-container">
+      <div>
         <img className="thumbnail" src={props.selectedPhoto.thumbnailURL}/>
-      </div>
-      <div className="description-container">
         <h3>{props.selectedPhoto.imgTitle}</h3>
         <p>{props.selectedPhoto.longDesc}</p>
 
@@ -66,12 +73,11 @@ function DetailView(props){
         <p><span className="label">Location:</span> {props.selectedPhoto.location}</p>
         <hr/>
         <h4>Download this image</h4>
-        <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.socialmediaURL} style={{color: 'white'}} download>Facebook</a></Button>
-        <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.printURL} style={{color: 'white'}} download>Print</a></Button>
-        <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.powerPointURL} style={{color: 'white'}} download>Powerpoint</a></Button>
-
-
-        <Button bsStyle="primary">Close</Button>
+        <div className="button-container">
+          <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.socialmediaURL} style={{color: 'white'}} download>Facebook</a></Button>
+          <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.printURL} style={{color: 'white'}} download>Print</a></Button>
+          <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.powerPointURL} style={{color: 'white'}} download>Powerpoint</a></Button>
+        </div>
       </div>
 
     </div>
