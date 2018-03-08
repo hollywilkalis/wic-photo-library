@@ -7,6 +7,10 @@ export default (state = {}, action) => {
   case c.SELECT_PHOTO:
     return action.photoId;
 
+  case c.DESELECT_PHOTO:
+    let selectedPhoto = null;
+    return action.selectedPhoto;
+
   default:
     return state;
   }

@@ -21,7 +21,7 @@ function PhotoItem(props){
 
   const photoInformation =
     <div>
-      <Col xs={6} s={4} md={3}>
+      <Col xs={6} s={3}>
         <Image src={props.thumbnailURL} thumbnail/>
         <p>{props.imgTitle}</p>
       </Col>
