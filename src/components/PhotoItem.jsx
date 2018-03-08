@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
-import { Image, Col, Modal } from 'react-bootstrap';
+import { Image, Col } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
 import DetailView from './DetailView';
-import { Link } from 'react-router-dom';
-import { Switch, Route, withRouter } from 'react-router-dom';
+
 
 function PhotoItem(props){
 
@@ -17,6 +16,7 @@ function PhotoItem(props){
       photoId: photoId
     };
     dispatch(action);
+
   }
 
   const photoInformation =

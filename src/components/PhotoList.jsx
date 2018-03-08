@@ -6,12 +6,14 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
 import DetailView from './DetailView';
+import DetailsModal from './DetailsModal';
 import { connect } from 'react-redux';
 
+
 function PhotoList(props) {
-  let selectedPhotoContent = null;
+  let selectedPhotoDetails = null;
   if (props.selectedPhoto.length > 0) {
-    return <DetailView selectedPhoto={props.photoList[props.selectedPhoto]}/>;
+    selectedPhotoDetails =  <DetailView selectedPhoto={props.photoList[props.selectedPhoto]}/>;
   }
 
   return (
@@ -23,7 +25,7 @@ function PhotoList(props) {
         }
         `}</style>
       <Search/>
-
+      {selectedPhotoDetails}
       <Grid>
         <Row>
           {Object.keys(props.photoList).map(function(photoId) {
@@ -48,7 +50,6 @@ function PhotoList(props) {
           })}
         </Row>
       </Grid>
-      
     </div>
   );
 }
