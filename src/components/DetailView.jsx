@@ -60,18 +60,6 @@ function DetailView(props){
         <h3>{props.selectedPhoto.imgTitle}</h3>
         <p>{props.selectedPhoto.longDesc}</p>
 
-        <p><span className="label">Image category: </span>{props.selectedPhoto.contentCategory}</p>
-
-        <p><span className="label">Image keywords:</span>{props.selectedPhoto.contentKeywords}</p>
-        <p><span className="label">Image orientation:</span> {props.selectedPhoto.orientation}</p>
-        <p><span className="label">Image use restrictions:</span> {props.selectedPhoto.useRestrictions}</p>
-        <hr/>
-
-        <p><span className="label">Photographer:</span>{props.selectedPhoto.photographer}</p>
-
-        <p><span className="label">Photo date:</span>{props.selectedPhoto.photoDate}</p>
-
-        <p><span className="label">Location:</span> {props.selectedPhoto.location}</p>
         <hr/>
         <h4>Download this image</h4>
         <div className="button-container">
@@ -79,6 +67,19 @@ function DetailView(props){
           <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.printURL} style={{color: 'white'}} download>Print</a></Button>
           <Button bsStyle="success" className="download-button"><a href={props.selectedPhoto.powerPointURL} style={{color: 'white'}} download>Powerpoint</a></Button>
         </div>
+
+        <hr/>
+        <p><span className="label">Image category: </span>{props.selectedPhoto.contentCategory}</p>
+        <p><span className="label">Image keywords:</span>{props.selectedPhoto.contentKeywords}</p>
+        <p><span className="label">Image orientation:</span> {props.selectedPhoto.orientation}</p>
+        <p><span className="label">Image use restrictions:</span> {props.selectedPhoto.useRestrictions}</p>
+
+        <p><span className="label">Photographer:</span>{props.selectedPhoto.photographer}</p>
+
+        <p><span className="label">Photo date:</span>{props.selectedPhoto.photoDate}</p>
+
+        <p><span className="label">Location:</span> {props.selectedPhoto.location}</p>
+
       </div>
 
     </div>

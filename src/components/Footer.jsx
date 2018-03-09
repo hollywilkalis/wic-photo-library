@@ -36,7 +36,7 @@ function Footer(){
         800 NE Oregon St Suite 865<br/>
         Portland, OR 97232<br/>
         971-673-0040<br/>
-        <i class="material-icons">mail</i><a href="mailto:barbara.a.mcclendon@state.or.us">Email us</a></p>
+        <a href="mailto:barbra.a.mcclendon@state.or.us">Email us</a></p>
       </div>
     </div>
   );
