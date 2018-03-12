@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function About(){
   return (
-    <div>
+    <div className="container">
       <style jsx>{`
 
         .imagedropshadow {
