@@ -5,13 +5,11 @@ function About(){
   return (
     <div>
       <style jsx>{`
-        img {
+
+        .imagedropshadow {
           width: 40%;
           float: right;
           margin: 0 20px;
-        }
-
-        .imagedropshadow {
           padding: 8px;
           border: solid 1px #EFEFEF;
           -moz-box-shadow: 1px 1px 5px #999;
@@ -26,9 +24,6 @@ function About(){
           font-weight: bold;
         }
 
-        div {
-          padding: 20px;
-        }
         `}</style>
     <img className="imagedropshadow" src="https://github.com/hollywilkalis/capstone-planning/blob/master/samples/FAM_024_FB.jpg?raw=true"/>
 

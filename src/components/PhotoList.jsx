@@ -6,7 +6,6 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
 import DetailView from './DetailView';
-import DetailsModal from './DetailsModal';
 import { connect } from 'react-redux';
 
 
