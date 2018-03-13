@@ -1,14 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Modal, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 function DetailView(props){
-
-  function unSelectPhoto(selectedPhoto) {
-
-    console.log(selectedPhoto);
-  }
 
   return (
     <div className="details-container">

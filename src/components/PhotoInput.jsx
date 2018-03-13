@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { v4 } from 'uuid';
 import { Button } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
@@ -78,9 +77,11 @@ function NewPhotoForm(props){
             id='contentCategory'
             placeholder='Content category'
             ref={(select) => {_contentCategory = select;}}>
-            <option value="family">Family</option>
-            <option value="clinic">Clinic</option>
             <option value="breastfeeding">Breastfeeding</option>
+            <option value="family">Family</option>
+            <option value="clinic">Clinic settings</option>
+            <option value="classes">Group class settings</option>
+            <option value="farm">Farmers markets</option>
           </select>
         </div>
         <div>

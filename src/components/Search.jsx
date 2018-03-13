@@ -6,19 +6,27 @@ import { Panel, Button } from 'react-bootstrap';
 function Search(){
 
   const statusOptions = [
-  {
-    label: 'Breastfeeding',
-    value: 'breastfeeding',
-  },
-  {
-    label: 'Clinic setting',
-    value: 'clinic',
-  },
-  {
-    label: 'Family',
-    value: 'family',
-  },
-]
+    {
+      label: 'Breastfeeding',
+      value: 'breastfeeding',
+    },
+    {
+      label: 'Clinic setting',
+      value: 'clinic',
+    },
+    {
+      label: 'Family',
+      value: 'family',
+    },
+    {
+      label: 'Group classes',
+      value: 'classes',
+    },
+    {
+      label: 'Farmers markets',
+      value: 'farm',
+    },
+  ]
   return (
     <div>
     <style jsx>{`

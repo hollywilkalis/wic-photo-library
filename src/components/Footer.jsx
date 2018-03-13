@@ -28,6 +28,7 @@ function Footer(){
       <div>
         <h4>Oregon WIC Photo Library</h4>
         <p>This photo library is a project of the Oregon WIC Program.</p>
+    
         <p>Site design and development by <a href="mailto:holly.wilkalis@gmail.com">Holly Wilkalis</a></p>
 
       </div>
