@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoItem from './PhotoItem';
 import Search from './Search';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
 import DetailView from './DetailView';
@@ -15,7 +15,6 @@ function PhotoList(props) {
   if (props.selectedPhoto.length > 0) {
     selectedPhotoDetails =  <DetailView selectedPhoto={props.photoList[props.selectedPhoto]}/>;
   }
-
 
   return (
     <div className="photo-list">
