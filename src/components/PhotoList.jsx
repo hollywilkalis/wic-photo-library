@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PhotoItem from './PhotoItem';
 import Search from './Search';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
 import DetailView from './DetailView';
@@ -24,11 +24,8 @@ function PhotoList(props) {
           display: flex;
           flex-wrap: wrap;
         }
-        .selected-view {
-          width: 40%;
-        }
+
         .list-view {
-          width: 55%;
           display: flex;
           flex: wrap;
           flex-direction: column;
@@ -41,6 +38,7 @@ function PhotoList(props) {
           display: flex;
         }
         `}</style>
+
       <div className="list-view">
         <div className="search-box">
           <Search/>

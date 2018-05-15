@@ -1,10 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 function Footer(){
   return (
-    <div className="footer-container">
+    <div className='footer-container'>
       <style jsx>{`
         .footer-container {
           background-color: #f3716d;
@@ -28,8 +26,8 @@ function Footer(){
       <div>
         <h4>Oregon WIC Photo Library</h4>
         <p>This photo library is a project of the Oregon WIC Program.</p>
-    
-        <p>Site design and development by <a href="mailto:holly.wilkalis@gmail.com">Holly Wilkalis</a></p>
+
+        <p>Site design and development by <a href='mailto:holly.wilkalis@gmail.com'>Holly Wilkalis</a></p>
 
       </div>
       <div>
@@ -37,7 +35,7 @@ function Footer(){
         800 NE Oregon St Suite 865<br/>
         Portland, OR 97232<br/>
         971-673-0040<br/>
-        <a href="mailto:barbra.a.mcclendon@state.or.us">Email us</a></p>
+          <a href='mailto:barbra.a.mcclendon@state.or.us'>Email us</a></p>
       </div>
     </div>
   );

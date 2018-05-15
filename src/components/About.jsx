@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function About(){
   return (
-    <div className="about-container">
+    <div className='about-container'>
       <style jsx>{`
 
         .imagedropshadow {
@@ -29,11 +29,11 @@ function About(){
         }
 
         `}</style>
-      <img className="imagedropshadow" src="https://firebasestorage.googleapis.com/v0/b/photo-library-7d682.appspot.com/o/FAM_024_FB.jpg?alt=media&token=eacee439-e891-4a1a-a6ad-26e24c149e34"/>
+      <img className='imagedropshadow' src='https://firebasestorage.googleapis.com/v0/b/photo-library-7d682.appspot.com/o/FAM_024_FB.jpg?alt=media&token=eacee439-e891-4a1a-a6ad-26e24c149e34'/>
 
       <h2>About the WIC Photo Library</h2>
 
-      <p>For guidelines on the use of photos from this library, please see our <a href="http://www.oregon.gov/oha/PH/HEALTHYPEOPLEFAMILIES/WIC/Documents/Photo%20Project/photo-project-user-guide.pdf">Photo Project User's Guide</a>.</p>
+      <p>For guidelines on the use of photos from this library, please see our <a href='http://www.oregon.gov/oha/PH/HEALTHYPEOPLEFAMILIES/WIC/Documents/Photo%20Project/photo-project-user-guide.pdf'>Photo Project User's Guide</a>.</p>
 
       <p>They say that a picture is worth a thousand words, and we believe that the images we use in our educational and outreach materials are every bit as important as the words we use to convey our messages. The images we use help convey our vision and our values to our participants and partners.</p>
 
@@ -48,7 +48,7 @@ function About(){
       <p>There are over 150 photos in this collection, all submitted from five local agencies. We would like to thank the following agencies for taking the initiative on hiring local photographers, all of whom made this project such a success! Thanks to Washington County, Jackson County, North Central Health District, Josephine County, and UCAN - Umpqua Community Action Network. You help us look good!</p>
 
       <h3>About this site</h3>
-      <p>This site was created Holly Wilkalis, our former Publications Coordinator, who always wished she had a photo library like this to draw on when creating materials. When she needed a project for her code school's capstone, she eagerly volunteered to take on the task of creating a library interface to show off the beautiful work of our local staff and partner photographers. If you have technical questions about the library, she can be reached at <a href="mailto:holly.wilkalis@gmail.com">holly.wilkalis@gmail.com</a> or via <a href="https://www.linkedin.com/in/holly-wilkalis/">LinkedIn account.</a></p>
+      <p>This site was created Holly Wilkalis, our former Publications Coordinator, who always wished she had a photo library like this to draw on when creating materials. When she needed a project for her code school's capstone, she eagerly volunteered to take on the task of creating a library interface to show off the beautiful work of our local staff and partner photographers. If you have technical questions about the library, she can be reached at <a href='mailto:holly.wilkalis@gmail.com'>holly.wilkalis@gmail.com</a> or via <a href='https://www.linkedin.com/in/holly-wilkalis/'>LinkedIn account.</a></p>
     </div>
   );
 }

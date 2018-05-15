@@ -1,5 +1,6 @@
 import constants from './../../src/constants';
 const { c } = constants;
+
 let newState;
 
 export default (state = {}, action) => {
@@ -8,8 +9,7 @@ export default (state = {}, action) => {
     return action.photoId;
 
   case c.DESELECT_PHOTO:
-    let selectedPhoto = null;
-    return action.selectedPhoto;
+    return state;
 
   default:
     return state;

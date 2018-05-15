@@ -1,10 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image, Col } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
-import DetailView from './DetailView';
 
 
 function PhotoItem(props){
@@ -26,6 +25,7 @@ function PhotoItem(props){
         <p>{props.imgTitle}</p>
       </Col>
     </div>;
+
   return (
     <div>
       <div onClick={() => {handleSelectingPhoto(props.photoId);}}>

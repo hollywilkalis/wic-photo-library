@@ -43,10 +43,3 @@ function receivePhoto(photoFromFirebase) {
     photo: photoFromFirebase
   };
 }
-
-export function deselectPhoto(selectedPhoto) {
-  return {
-    type: c.DESELECT_PHOTO,
-    selectedPhoto: selectedPhoto
-  };
-}
