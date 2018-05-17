@@ -11,7 +11,7 @@ function Home(){
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          margin-bottom: 30px;
+          height: auto;
           }
 
         .caption {
@@ -19,10 +19,9 @@ function Home(){
           font-weight: bold;
           font-size: 35px;
         }
-
-        }
+      
         `}</style>
-      <Carousel>
+      <Carousel className="">
         <Carousel.Item>
           <img width={900} height={500} alt="900x500" src="https://firebasestorage.googleapis.com/v0/b/photo-library-7d682.appspot.com/o/BFMB_035_PPT.jpg?alt=media&token=12b8fead-3d5e-4dd8-8a3e-4f7fa897b9e5" />
           <Carousel.Caption>

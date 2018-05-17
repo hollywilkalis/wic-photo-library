@@ -13,9 +13,7 @@ function Footer(){
           padding: 20px;
           width: 100%;
           font-size: 15px;
-          position: fixed;
-          bottom: 0;
-          left: 0;
+          margin-top: 40px;
         }
         h4 {
           font-weight: bold;
