@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavItem, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 function SiteNav(){
   return (
@@ -11,9 +11,8 @@ function SiteNav(){
         </Navbar.Header>
         <Nav pullRight style={{marginTop: '20px'}}>
           <NavItem><Link to ="/" style={{color: '#2cb34a', textDecoration: 'none', fontWeight: 'bold' }}>Home</Link></NavItem>
-          <NavItem><Link to="/photos" style={{color: '#2cb34a',  textDecoration: 'none', fontWeight: 'bold' }}>Search for a photo</Link></NavItem>
+          <NavItem><Link to="/photos" style={{color: '#2cb34a',  textDecoration: 'none', fontWeight: 'bold' }}>Find a photo</Link></NavItem>
           <NavItem><Link to="/about" style={{color: '#2cb34a',  textDecoration: 'none', fontWeight: 'bold' }}>About the project</Link></NavItem>
-          <NavItem><Link to="/photoinput" style={{color: '#2cb34a',  textDecoration: 'none', fontWeight: 'bold' }}>Admin</Link></NavItem>
         </Nav>
       </Navbar>
     </div>

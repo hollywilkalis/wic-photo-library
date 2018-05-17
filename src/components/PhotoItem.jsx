@@ -1,11 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image, Col } from 'react-bootstrap';
 import constants from './../../src/constants';
 const { c } = constants;
-import DetailView from './DetailView';
-
 
 function PhotoItem(props){
 

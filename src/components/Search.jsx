@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Form, Select } from 'react-form';
 import { Panel, Button } from 'react-bootstrap';
 
@@ -26,10 +26,10 @@ function Search(){
       label: 'Farmers markets',
       value: 'farm',
     },
-  ]
+  ];
   return (
     <div>
-    <style jsx>{`
+      <style jsx>{`
       .padding {
         padding: 10px;
       }
@@ -37,7 +37,7 @@ function Search(){
       `}</style>
       <Panel>
         <div className="padding">
-        <h4>Filter images by category</h4>
+          <h4>Filter images by category</h4>
           <Form>
             {formApi => (
               <form id="select-input-form">
