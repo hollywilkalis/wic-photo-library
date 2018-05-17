@@ -14,6 +14,25 @@ The customer has a new photo library that they would like to make available to t
 This project is a work in process. For more information, contact Holly Wilkalis at holly.wilkalis@gmail.com. For a repository of my planning documents, please see https://github.com/hollywilkalis/capstone-planning.
 
 
+## Technologies used
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+The library also uses Redux, React Router, Bootstrap, Webpack, Babel, ES6, and eslint.
+
+
+
+## Setup instructions
+
+To clone the project, go to your terminal and run the command:
+$ git clone https://github.com/hollywilkalis/wic-photo-library.git
+
+After cloning, navigate into the project directory and run:
+$ npm install
+
+Once cloned, to launch the development server, run:
+$ webpack-dev-server
+then navigate to http://localhost:8080 in your browser
+
 ### License
 
 *MIT license*
