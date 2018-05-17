@@ -10,10 +10,12 @@ function Footer(){
           color: white;
           display: flex;
           justify-content: space-between;
-          margin-top: 40px;
           padding: 20px;
           width: 100%;
           font-size: 15px;
+          position: fixed;
+          bottom: 0;
+          left: 0;
         }
         h4 {
           font-weight: bold;
@@ -37,7 +39,7 @@ function Footer(){
         Portland, OR 97232<br/>
         971-673-0040<br/>
           <a href="mailto:barbra.a.mcclendon@state.or.us">Email us</a></p>
-        <Link to="/photoinput" style={{color: 'white',  textDecoration: 'none', fontWeight: 'bold', fontSize: '10px' }}>Admin login</Link>
+        <Link to="/photoinput" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '10px' }}>Admin login</Link>
       </div>
     </div>
   );

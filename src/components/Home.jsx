@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Footer from './Footer';
+
 import { Carousel } from 'react-bootstrap';
 
 
@@ -12,6 +11,7 @@ function Home(){
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
+          margin-bottom: 30px;
           }
 
         .caption {
@@ -45,7 +45,6 @@ function Home(){
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <Footer />
     </div>
   );
 }

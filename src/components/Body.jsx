@@ -5,6 +5,7 @@ import Home from './Home';
 import PhotoList from './PhotoList';
 import PhotoInput from './PhotoInput';
 import DetailView from './DetailView';
+import Footer from './Footer';
 import About from './About';
 import { connect } from 'react-redux';
 import constants from './../constants';
@@ -31,6 +32,7 @@ class Body extends React.Component {
           <Route exact path='/detailview' render={()=>
             <DetailView photoList={this.props.masterPhotoList} selectedPhoto={this.props.selectedPhoto}/>} />
         </Switch>
+        <Footer />
       </div>
     );
   }

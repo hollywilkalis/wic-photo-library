@@ -44,34 +44,39 @@ function NewPhotoForm(props){
     <div className="form-container">
       <style jsx>{`
         .form-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          flex-wrap: wrap;
           padding: 20px;
           }
           input, select, textarea {
-            width: 50%;
             margin-bottom: 10px;
+            width: 70%;
           }
-
+        .form-label {
+          font-weight: bolder;
+        }
+        .input-spacing {
+          margin-top: 10px;
+        }
         `}</style>
+      <h2>Add a new image to the library</h2>
       <form onSubmit={handleNewPhotoFormSubmission}>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Short title</p>
           <input
             type='text'
             id='imgTitle'
             placeholder='Short image title'
             ref={(input) => {_imgTitle = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Long description</p>
           <textarea
             type='text'
             id='longDesc'
             placeholder='Long description'
             ref={(textarea) => {_longDesc = textarea;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Choose your photo category</p>
           <select
             multiple={true}
             id='contentCategory'
@@ -84,61 +89,71 @@ function NewPhotoForm(props){
             <option value="farm">Farmers markets</option>
           </select>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Enter image keywords (separated by comma)</p>
           <textarea
             id='contentKeywords'
             placeholder='Content keywords (separated by commas)'
             ref={(textarea) => {_contentKeywords = textarea;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Photo orientation</p>
           <input
             id='orientation'
             placeholder='Photo orientation'
             ref={(input) => {_orientation = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Photo location (if known)</p>
           <input
             id='location'
             placeholder='Photo location'
             ref={(input) => {_location = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Photo date (month and year)</p>
           <input
             id='photoDate'
             placeholder='Photo date'
             ref={(input) => {_photoDate = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Photographer</p>
           <input
             id='photographer'
             placeholder='Photographer'
             ref={(input) => {_photographer = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">Describe any use restrictions</p>
           <textarea
             id='useRestrictions'
             placeholder='Use restrictions'
             ref={(textarea) => {_useRestrictions = textarea;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">URL for image thumbnail</p>
           <input
             id='thumbnailURL'
             placeholder='URL for thumbnail image'
             ref={(input) => {_thumbnailURL = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">URL for presentation image</p>
           <input
             id='powerPointURL'
             placeholder='URL for powerPointURL'
             ref={(input) => {_powerPointURL = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">URL for social media image</p>
           <input
             id='socialmediaURL'
             placeholder='socialmediaURL'
             ref={(input) => {_socialmediaURL = input;}}/>
         </div>
-        <div>
+        <div className="input-spacing">
+          <p className="form-label">URL for print image</p>
           <input
             id='printURL'
             placeholder='printURL'
