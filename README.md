@@ -19,6 +19,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The library also uses Redux, React Router, Bootstrap, Webpack, Babel, ES6, and eslint.
 
+The app is currently hosted in Heroku. For a live demo version, please visit https://fathomless-plateau-11174.herokuapp.com/#/
+
 
 
 ## Setup instructions
